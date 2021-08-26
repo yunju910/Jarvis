@@ -1,16 +1,16 @@
-// ÃÖ´ë°ª
+// ìµœëŒ€ê°’
 #include <stdio.h>
 
 int main(void) {
     
-    int scores[9]; // ÀÔ·Â¹ŞÀ» ¹è¿­
+    int scores[9]; // ì…ë ¥ë°›ì„ ë°°ì—´
     
     for (int i = 0; i < 9; i++) {
         scanf("%d", &scores[i]);
     }
     
-    int max = scores[0]; // ÃÊ±â ÃÖ´ñ°ªÀ» Ã¹ ¹øÂ° °ªÀ¸·Î ÁöÁ¤
-    for (int i = 0; i < 9; i++) { // ÃÖ´ñ°ª Ã£±â
+    int max = scores[0]; // ì´ˆê¸° ìµœëŒ“ê°’ì„ ì²« ë²ˆì§¸ ê°’ìœ¼ë¡œ ì§€ì •
+    for (int i = 0; i < 9; i++) { // ìµœëŒ“ê°’ ì°¾ê¸°
         if (scores[i] > max)
         {
             max = scores[i];
@@ -19,7 +19,7 @@ int main(void) {
     printf("%d\n", max);
     
 
-    for (int i = 0; i < 9; i++) { // ÃÖ´ñ°ªÀÇ À§Ä¡ Ã£±â 
+    for (int i = 0; i < 9; i++) { // ìµœëŒ“ê°’ì˜ ìœ„ì¹˜ ì°¾ê¸° 
         if (scores[i] == max)
         {
             printf("%d", i + 1);
