@@ -3,7 +3,7 @@
 #define MAX(X,Y) ((X) > (Y) ? (X) : (Y))
 
 int count = 0; 
-//AVL Æ®¸® ³ëµå Á¤ÀÇ
+//AVL Ã†Â®Â¸Â® Â³Ã«ÂµÃ¥ ÃÂ¤Ã€Ã‡
 int maximum (int a, int b){
     if(a >= b)
         return a;
