@@ -1,4 +1,4 @@
-// 최대값
+// 최대값 2562번
 #include <stdio.h>
 
 int main(void) {
