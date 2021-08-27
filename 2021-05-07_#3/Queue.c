@@ -1,4 +1,5 @@
 // 큐2 18258번
+// 런타임 에러 Segfault 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -85,27 +86,27 @@ int main (void){
     QueueType q; 
     init_queue(&q);
     
-    char *str = (char *)malloc(sizeof(char) * 20);
+    char *str = (char *)malloc(sizeof(char) * 6);
     for(int i = 0; i < num; i++){
-        scanf("%s", str);
-        if (strcmp(str, "push") == 0) {
+        scanf("%s", &str);
+        if (!strcmp(str, "push")) {
 			int X; 
 			scanf("%d", &X);
 			push(&q, X);
 		}
-		else if (strcmp(str, "pop") == 0) {
+		else if (!strcmp(str, "pop")) {
 			printf("%d\n", pop(&q));
 		}
-		else if (strcmp(str, "empty") == 0) {
+		else if (!strcmp(str, "empty")) {
 			printf("%d\n", empty(&q));
 		}
-		else if (strcmp(str, "front") == 0) {
+		else if (!strcmp(str, "front")) {
 			printf("%d\n", front(&q));
 		}
-		else if (strcmp(str, "back") == 0) {
+		else if (!strcmp(str, "back")) {
 			printf("%d\n", back(&q));
         }
-        else if (strcmp(str, "size") == 0) {
+        else if (!strcmp(str, "size")) {
 			printf("%d\n", size(&q));
         }
     }
